@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block content
+%}
+
+<ul class="nostyle home">
+  {% if paginator %} {% for page in paginator.pages %}
+  <li class="blogpost">
+    <a href="{{ page.permalink | safe }}">
+      <div class="content">
+        <h2 class="blogtitle">{{ page.title }}</h2>
+        <p class="blogoneliner">{{ page.description }}</p>
+        <p class="bloginfo">
+          {{ page.day }}.{{ page.month }}.{{ page.year }} | {{ page.reading_time
+          }} min.
+        </p>
+      </div>
+    </a>
+  </li>
+  {% endfor %} {% endif %}
+  <div style="text-align: center">
+    <h2>
+      {% if paginator.previous %}
+      <a class="active" href="{{ paginator.previous }}">&lt;</a>
+      {% else %}
+      <span class="inactive">&lt;</span>
+      {% endif %} {{ paginator.current_index }} page {% if paginator.next %}
+      <a class="active" href="{{ paginator.next }}">&gt;</a>
+      {% else %}
+      <span class="inactive">&gt;</span>
+      {% endif %}
+    </h2>
+  </div>
+</ul>
+
+{% endblock content %}

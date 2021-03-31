@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+      /* Loading in the fonts*/
+      @font-face {
+        font-family: "Open Sans";
+        src: url("../static/opensans/OpenSans-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "Space Mono";
+        src: url("../static/spacemono/SpaceMono-Regular.ttf");
+      }
+
+      /* The main sections' CSS */
+      body {
+        font-family: "Open Sans", serif;
+        text-align: left;
+        font-style: normal;
+        color: #2a2f35;
+        margin: 0;
+        border: 0;
+      }
+
+      /* Organizes the site's contents size */
+      .main {
+        width: 45rem;
+        overflow: hidden;
+        margin: 0 auto 3em auto;
+      }
+
+      /* Blog posts*/
+      .home {
+        margin: 1em auto;
+      }
+
+      .nostyle {
+        list-style: none;
+      }
+
+      /* Header stuff */
+      .header {
+        width: 90%;
+        margin: 1em 1em 0.5em 2.8em;
+        padding: 1.1rem;
+        height: auto;
+        display: inline-block;
+      }
+
+      .intro {
+        width: 20em;
+        margin: 0;
+        float: left;
+        height: auto;
+      }
+
+      .nav {
+        float: right;
+        display: block;
+        margin: 0.5em;
+        padding: 0;
+      }
+
+      .headernav {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbutton {
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+      .name {
+        font-family: "Space Mono", monospace;
+        font-weight: bold;
+        margin: 0 1em 1em 0;
+      }
+
+      .description {
+        font-weight: 600;
+        font-size: 1.2em;
+        line-height: 1.35em;
+        margin: 0.3em 0 0 0;
+        color: #858585;
+      }
+
+      /* Blog post*/
+      .blogpost {
+        border-right: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        display: block;
+        margin: 0;
+        position: relative;
+        padding: 1.4em 1.4em 1em 1.4em;
+      }
+
+      .blogtitle {
+        font-family: "Open Sans", serif;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        margin: 0.2em 0 0.4em 0;
+        color: #000000;
+        line-height: 1;
+      }
+
+      .blogoneliner {
+        font-family: "Open Sans", serif;
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin: 0 0 0 0;
+        color: #858585;
+      }
+
+      .bloginfo {
+        font-family: "Open Sans", serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0.6em 0 0 0;
+        color: #858585;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin: 0.2em 0 0.2em 0;
+        color: #494949;
+        font-weight: 500;
+      }
+
+      h6 {
+        margin: 1em 0 1em 0;
+        color: #262626;
+        font-weight: 800;
+      }
+
+      .inactive {
+        color: #cecece;
+        font-weight: 300;
+      }
+
+      .active {
+        color: #000000;
+        font-weight: 900;
+      }
+
+      .tagsingle {
+        font-size: 1.3rem;
+        color: #494949;
+        font-weight: 500;
+      }
+
+      img {
+        max-width: 25rem;
+        width: 100%;
+        height: auto;
+        margin: 1.2em auto 1.2em auto;
+        display: block;
+      }
+
+      /* Footer stuff */
+      .footer {
+        bottom: 0;
+        background: #f8f8f8;
+        height: 3em;
+        width: 100%;
+        display: block;
+        margin-top: 5em;
+        padding: 1.8em 0 2em 0;
+        border: 0;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .footercontents {
+        width: 62em;
+        margin: 0 auto;
+        border: 0;
+        padding: 0;
+      }
+
+      .leftlinks {
+        float: left;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      .rightlinks {
+        float: right;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      /* Colors */
+      .red {
+        color: #ff002f;
+      }
+
+      .buttons {
+        color: #262626;
+        font-family: "Space Mono", monospace;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .nostylelink {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .terms {
+        list-style: none;
+        font-size: 1.2em;
+      }
+
+      .error {
+        margin: 7em auto;
+        text-align: center;
+      }
+
+      .article-info {
+        border-top: 1px solid #e7e7e7;
+        margin-top: 0.3em;
+        padding-top: 1em;
+      }
+
+      /* code formatting stuff */
+      code {
+        border-radius: 3px;
+      }
+    </style>
+    {% block headadd %} {% endblock %}
+  </head>
+
+  <body>
+    <div id="site">
+      <div class="main">
+        <div class="header">
+          <div class="intro">
+            <a
+              class="nostylelink"
+              href="https://lastgenius-edu.github.io/UCU_Linux_Club/"
+            >
+              <h1 class="name"><span class="red"></span>LinuxClub@UCU</h1>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nostyle headernav">
+              <li class="navbutton">
+                <a
+                  class="nostylelink"
+                  href="about page idk"
+                  title="About"
+                  class="buttons"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footercontents">
+        <ul class="nostyle">
+          <li class="leftlinks name">LinuxClub@UCU</li>
+
+          <div class="rightlinks">
+            <li class="navbutton">
+              <a
+                class="nostylelink"
+                href="https://t.me/joinchat/Rj8nFcuO9FWV6Mgv"
+                title="Telegram"
+                >Our Telegram Chat</a
+              >
+            </li>
+            <li class="navbutton">
+              <a
+                class="nostylelink"
+                href="https://www.youtube.com/channel/UC66_c7HcFx6GuX4izx4-BlA"
+                title="Youtube"
+                >Youtube channel</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

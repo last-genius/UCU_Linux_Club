@@ -1,0 +1,119 @@
+{% import "macros/page.html" as page_macros %}
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block headadd %}
+<style>
+    a :not(.nostylelink) {
+	color: #e7e7e7;
+    }
+
+    .post {
+        width: 65%;
+        margin: 1em auto;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .content {
+        display: inline-block;
+    }
+
+    .titles {
+        display: inline-block;
+    }
+
+    .article-info {
+        border-top: 1px solid #e7e7e7;
+    }
+
+    p:not(.description, .postliner, .posttitle), li:not(.navbutton, .nostyle, .name, .leftlinks, .rightlinks),
+    .article-date, .article-taxonomies {
+        width: 100%;
+        font-size: 1.05rem;
+        float: left;
+        font-weight: 400;
+        color: #222;
+    }
+
+    .posttitle {
+        width: 100%;
+        font-size: 2.2rem;
+        float:left;
+        font-weight: 1000;
+        color: #000000;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0.4em;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    .postliner {
+        width: 100%;
+        font-size: 1.3rem;
+        float: left;
+        font-weight: 600;
+        margin-bottom: 0.2em;
+        color: #858585;
+    }
+
+    .article-date {
+        margin-top: 1em;
+    }
+
+    .article-taxonomies {
+        margin: 0;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    ul {
+        list-style: circle;
+    }
+
+    img {
+        margin-bottom: 1em;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<article class="post">
+    <header class="titles">
+        <p class="posttitle"> {{ page.title }}</p>
+        <p class="postliner">{{ page.description }}</p>
+    </header>
+    <div class="content">
+        {{ page.content | safe }}
+    </div>
+
+    <div class="article-info">
+        {% if page.date %}
+        <div class="article-date">{{ page.day }}.{{ page.month }}.{{ page.year }}</div>
+        {% endif %}
+        <div class="article-taxonomies">
+            {% if page.taxonomies.categories %}
+            <ul class="article-categories">
+                {% for cat in page.taxonomies.categories %}
+                <li><a href="{{ get_taxonomy_url(kind="categories", name=cat) | safe }}">{{ cat }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if page.taxonomies.tags %}
+            <ul class="article-tags">
+                {% for tag in page.taxonomies.tags %}
+                <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</article>
+
+{% endblock content %}
