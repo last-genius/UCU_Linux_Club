@@ -15,22 +15,36 @@
         src: url("../static/spacemono/SpaceMono-Regular.ttf");
       }
 
+      /* Defining colors */
+      :root {
+        --dark-background: #102027;
+        --lighter-background: #102027;
+        --border-color: #0069c0;
+        --text-h: #e5e9f0;
+        --text-p: #e5e9f0;
+      }
+
       /* The main sections' CSS */
       body {
         font-family: "Open Sans", serif;
         text-align: left;
         font-style: normal;
-        color: #E5E9F0;
-        background-color: #2E3440;
+        color: var(--text-h);
+        background-color: var(--dark-background);
         margin: 0;
         border: 0;
       }
 
       /* Organizes the site's contents size */
       .main {
-        width: 45rem;
+        width: 100%;
         overflow: hidden;
         margin: 0 auto 3em auto;
+      }
+
+      /* For mobile devices */
+      @media (min-width: 768px) {
+        .main { width: 45rem; }
       }
 
       /* Blog posts*/
@@ -45,10 +59,14 @@
       /* Header stuff */
       .header {
         width: 90%;
-        margin: 1em 1em 0.5em 2.8em;
+        margin: 0 3% 0;
         padding: 1.1rem;
         height: auto;
         display: inline-block;
+      }
+
+      @media (min-width: 768px) {
+        .header { margin: 1em 1em 0  2.8em; }
       }
 
       .intro {
@@ -61,7 +79,7 @@
       .nav {
         float: right;
         display: block;
-        margin: 0.5em;
+        margin: 0.8em;
         padding: 0;
       }
 
@@ -77,14 +95,19 @@
 
       .name {
         font-family: "Space Mono", monospace;
+        font-size: 110%;
         font-weight: bold;
         margin: 0 1em 1em 0;
+      }
+
+      @media (min-width: 768px) {
+        .name { font-size: 200%; }
       }
 
       /* Blog post*/
       .blogpost {
         /* border-right: 1px solid #3B4252; */
-        border-bottom: 1px solid #3B4252;
+        border-bottom: 1px solid var(--border-color);
         display: block;
         margin: 0;
         position: relative;
@@ -93,19 +116,19 @@
 
       .blogtitle {
         font-family: "Open Sans", serif;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: bolder;
         margin: 0.2em 0 0.4em 0;
-        color: #E5E9F0;
+        color: var(--text-h);
         line-height: 1;
       }
 
       .blogoneliner {
         font-family: "Open Sans", serif;
-        font-size: 1.15rem;
+        font-size: 0.9rem;
         font-weight: 600;
         margin: 0 0 0 0;
-        color: #4C566A;
+        color: var(--text-h);
       }
 
       .bloginfo {
@@ -113,35 +136,41 @@
         font-size: 1rem;
         font-weight: 600;
         margin: 0.6em 0 0 0;
-        color: #4C566A;
+        color: var(--text-h);
+      }
+
+      @media (min-width: 768px) {
+        .blogtitle { font-size: 1.5rem; }
+        .blogoneliner { font-size: 1.05rem; }
+        .bloginfo { font-size: 1rem; }
       }
 
       h2 {
-        font-size: 1.2rem;
-        margin: 0.2em 0 0.2em 0;
-        color: #E5E9F0;
-        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 1em 0 0.2em 0;
+        color: var(--text-h);
+        font-weight: 600;
       }
 
       h6 {
         margin: 1em 0 1em 0;
-        color: #E5E9F0;
+        color: var(--text-h);
         font-weight: 800;
       }
 
       .inactive {
-        color: #3B4252;
+        color: var(--lighter-background);
         font-weight: 300;
       }
 
       .active {
-        color: #E5E9F0;
+        color: var(--border-color);
         font-weight: 900;
       }
 
       .tagsingle {
         font-size: 1.3rem;
-        color: #E5E9F0;
+        color: var(--text-h);
         font-weight: 500;
       }
 
@@ -156,22 +185,27 @@
       /* Footer stuff */
       .footer {
         bottom: 0;
-        background: #3B4252;
+        border-top: 1px solid var(--border-color);
+        background: var(--lighter-background);
         height: 3em;
         width: 100%;
         display: block;
-        margin-top: 5em;
-        padding: 1.8em 0 2em 0;
+        padding: 1em 0 2em 0;
         border: 0;
         text-align: left;
         font-size: 1rem;
       }
 
       .footercontents {
-        width: 62em;
+        width: 95%;
         margin: 0 auto;
         border: 0;
         padding: 0;
+      }
+
+      /* For mobile devices */
+      @media (min-width: 768px) {
+        .footercontents { width: 42em; }
       }
 
       .leftlinks {
@@ -183,18 +217,13 @@
 
       .rightlinks {
         float: right;
-        margin: 0;
+        margin: 0.8em 0;
         padding: 0;
         border: 0;
       }
 
-      /* Colors */
-      .red {
-        color: #ff002f;
-      }
-
       .buttons {
-        color: #3B4252;
+        color: var(--text-h);
         font-family: "Space Mono", monospace;
         font-weight: bold;
         font-size: 1.2rem;
@@ -206,7 +235,8 @@
       }
 
       a {
-        text-decoration: none;
+	    color: #E5E9F0;
+      text-decoration: underline;
       }
 
       .terms {
@@ -250,7 +280,16 @@
               <li class="navbutton">
                 <a
                   class="nostylelink"
-                  href="about page idk"
+                  href="articles"
+                  title="Articles"
+                  class="buttons"
+                  >Articles</a
+                >
+              </li>
+              <li class="navbutton">
+                <a
+                  class="nostylelink"
+                  href="{{ get_url(path="@/info/about.md") }}"
                   title="About"
                   class="buttons"
                   >About</a
