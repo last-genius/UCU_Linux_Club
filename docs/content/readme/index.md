@@ -12,11 +12,11 @@ Official repository of UCU student-organized Linux Club 20/21 with the schedule,
 
 ## Second semester schedule:
 
-Week 1 - Internet and Network Interfaces - 
+**Week 1** - Internet and Network Interfaces - 
 [Zoom](https://softserveinc.zoom.us/j/5674645619?pwd=VWNEcDBaTksycjR6YjhibFBtajhXdz09) | 
 [Lecture notes](https://docs.google.com/presentation/d/e/2PACX-1vSSadBIITbvf13sJ624zSe88cXqjXVOvFeNqmFxbhoxof43t51eGi-POJZDPoUu8h4-3unlOy8FQQ13/pub?start=false&loop=false&delayms=3000)
 
-Week 2.1 - Markup Languages (Latex, XML HTML, JSON, TOML) - 
+**Week 2.1** - Markup Languages (Latex, XML HTML, JSON, TOML) - 
 [Zoom](https://softserveinc.zoom.us/j/5674645619?pwd=VWNEcDBaTksycjR6YjhibFBtajhXdz09) | 
 [Lecture notes](https://docs.google.com/presentation/d/e/2PACX-1vQay3NircnJCfpeFy6WNKmFnbywvOR3Gf6rM93-8kjjrMe1CFWo-qDq1r289A0W3l5D-kbNoLH1FBAg/pub?start=false&loop=false&delayms=3000)
 
