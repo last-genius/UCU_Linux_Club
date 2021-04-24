@@ -73,6 +73,16 @@ Week 2.1 - Markup Languages (Latex, XML HTML, JSON, TOML) -
 
 **Week 12** - Docker
 
+## Other resources
+
+* [About page](./info/about)
+* [Arch Linux installation tutorial](./articles/arch-manual/)
+* [Manjaro Linux installation ](./articles/manjaro-manual/)
+* [Useful resources](./articles/resources/)
+* [Useful programs](./articles/programs/)
+* [Useful links](./articles/useful-links/)
+* [All of our written articles](./articles)
+
 ## How to submit homeworks:
 
 * Fork [our repository](https://github.com/ucu-cs/UCU_Linux_Club)
