@@ -29,7 +29,9 @@ key, which is why we recommend you join our [Telegram group](https://t.me/joinch
 - If you want to follow our later lectures, you need to have an Arch Linux-based system installed - see a [manual on how to set one up yourself](./articles/manual).
 - Desire to learn!
 
-# Second semester schedule:
+# 2020/21 Second Semester Schedule:
+
+*(Previous semesters' resources are available in the [archive](./archive/readme))*
 
 **Week 1** - Internet and Network Interfaces - 
 [Zoom](https://softserveinc.zoom.us/j/5674645619?pwd=VWNEcDBaTksycjR6YjhibFBtajhXdz09) | 

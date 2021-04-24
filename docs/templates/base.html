@@ -78,7 +78,7 @@
       }
 
       .intro {
-        width: 50%;
+        width: auto;
         margin: 0;
         float: left;
         height: auto;
@@ -89,7 +89,7 @@
       }
 
       .nav {
-        width: 10em;
+        width: auto;
         float: right;
         display: block;
         margin-top: 0.1em;
@@ -336,6 +336,15 @@
                   title="Articles"
                   class="buttons"
                   >Docs</a
+                >
+              </li>
+              <li class="navbutton">
+                <a
+                  class="nostylelink"
+                  href="{{ get_url(path="@/archive/README.md") }}"
+                  title="Archive"
+                  class="buttons"
+                  >Archive</a
                 >
               </li>
               <li class="navbutton">
