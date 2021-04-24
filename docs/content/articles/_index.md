@@ -1,5 +1,5 @@
 +++
-title = "List of articles"
+title = "Our documents, manuals and articles:"
 sort_by = "date"
 paginate_by = 10
 template = "blog.html"

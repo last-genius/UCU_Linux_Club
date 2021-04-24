@@ -2,15 +2,34 @@
 title = "About"
 date = 2021-04-05
 +++
-Official repository of UCU student-organized Linux Club 20/21 with the schedule, useful links and presentations.
 
-Плюс якесь довге пояснення чому ми це робимо бла бла бла бла бла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла блабла бла бла бла
+# About us
 
-## Pre-requirements:
-- Remembering at least something from the first semester 
-- Having a working-and-running Arch-based system set up on your laptop
+We are just a bunch of students from Ukrainian Catholic University passionate about
+computing! We like to know how our system works under the hood, both because we
+want to use all the resources we have at our disposal - the computing power,
+useful abstractions and tools; and because we like to tinker with stuff. 
+And what's even better than knowing how to do magical things with your computer? 
+Letting others know they can do it too, which is why we are organizing this club - 
+an informal course for Ukrainian computer science students taught by students! 
 
-## Second semester schedule:
+We are also huge supporters of the philosophy of open source and free software, 
+which is why we've chosen to call our club after the Linux operating system 
+(and why we're going to use it throughout our lectures),
+and why we've decided to make this course public.
+
+You can join us live - we have lectures each **Wednesday 16:30 Kyiv time**, or watch 
+our previous recorded lectures and read through lecture notes. Learning as a part of community is 
+key, which is why we recommend you join our [Telegram group](https://t.me/joinchat/Rj8nFcuO9FWV6Mgv)!
+
+# Pre-requirements:
+
+- An *OK* English level. If you've gotten this far, you're good to go! 
+- Computer with an Internet connection.
+- If you want to follow our later lectures, you need to have an Arch Linux-based system installed - see a [manual on how to set one up yourself](./articles/manual).
+- Desire to learn!
+
+# Second semester schedule:
 
 **Week 1** - Internet and Network Interfaces - 
 [Zoom](https://softserveinc.zoom.us/j/5674645619?pwd=VWNEcDBaTksycjR6YjhibFBtajhXdz09) | 
@@ -73,7 +92,7 @@ Official repository of UCU student-organized Linux Club 20/21 with the schedule,
 
 **Week 12** - Docker
 
-## Other resources
+# Other resources:
 
 * [About page](./info/about)
 * [Arch Linux installation tutorial](./articles/arch-manual/)
@@ -83,7 +102,15 @@ Official repository of UCU student-organized Linux Club 20/21 with the schedule,
 * [Useful links](./articles/useful-links/)
 * [All of our written articles](./articles)
 
-## How to submit homeworks:
+# Homework
+
+Yeah, we don't like homework either, but practicing something yourself
+is the best way to learn a new topic! Most of our lectures will also provide
+some kind of a home task for you to complete - both to remind yourself
+what the lecture was about and to learn on your own. 
+
+You don't need to submit these homeworks, but if you want our feedback on 
+them to learn even more, here are a few simple steps for you to follow:
 
 * Fork [our repository](https://github.com/ucu-cs/UCU_Linux_Club)
 * Watch the respective lecture on the topic
