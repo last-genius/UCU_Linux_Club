@@ -40,7 +40,7 @@
 
       /* Organizes the site's contents size */
       .main {
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         margin: 0 auto 3em auto;
       }
@@ -61,34 +61,56 @@
 
       /* Header stuff */
       .header {
-        width: 90%;
-        margin: 0 3% 0;
-        padding: 1.1rem;
+        width: 100%;
+        margin: 0;
+        padding: 1.1rem 0 0 0;
         height: auto;
         display: inline-block;
       }
 
       @media (min-width: 768px) {
-        .header { margin: 1em 1em 0  2.8em; }
+        .header { margin: 1em 1em 0 1em; }
       }
 
       .intro {
-        width: 20em;
+        width: 50%;
         margin: 0;
         float: left;
         height: auto;
       }
 
+      @media (min-width: 768px) {
+        .intro { width: 20em; }
+      }
+
       .nav {
+        width: 10em;
         float: right;
         display: block;
-        margin: 0.8em;
+        margin-top: 0.1em;
         padding: 0;
       }
 
+      @media (min-width: 768px) {
+        .nav { margin: 0.8em; }
+      }
+
       .headernav {
+        float: right;
         margin: 0;
         padding: 0;
+      }
+      
+      @media (min-width: 768px) {
+        .headernav { margin-right: 1em; }
+      }
+
+      ol, ul {
+        padding-inline-start: 1em;
+      }
+
+      @media (min-width: 768px) {
+        ol, ul { padding-inline-start: 2em; }
       }
 
       .navbutton {
@@ -98,7 +120,7 @@
 
       .name {
         font-family: "Space Mono", monospace;
-        font-size: 110%;
+        font-size: 1.2em;
         font-weight: bold;
         margin: 0 1em 1em 0;
       }
@@ -146,6 +168,14 @@
         .blogtitle { font-size: 1.5rem; }
         .blogoneliner { font-size: 1.05rem; }
         .bloginfo { font-size: 1rem; }
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+
+      @media (min-width: 768px) {
+        p {font-size: 1em;}
       }
 
       h2 {
