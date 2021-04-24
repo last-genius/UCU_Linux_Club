@@ -105,7 +105,7 @@ key, which is why we recommend you join our [Telegram group](https://t.me/joinch
 # Homework
 
 Yeah, we don't like homework either, but practicing something yourself
-is the best way to learn a new topic! Most of our lectures will also provide
+is the best way to learn a new topic! Most of our lectures will provide
 some kind of a home task for you to complete - both to remind yourself
 what the lecture was about and to learn on your own. 
 
